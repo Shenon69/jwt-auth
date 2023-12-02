@@ -1,1 +1,1 @@
-# jwt-v1
+# jwt-with-cookies
