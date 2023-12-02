@@ -3,11 +3,13 @@ import authRouter from "./routes/authentication";
 import "dotenv/config";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
+import cookieParser from "cookie-parser"
 
 const app = Express();
 const PORT = 3000;
 
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.listen(PORT, () => {
   console.log(`Server running on port: http://localhost:${PORT}`);
